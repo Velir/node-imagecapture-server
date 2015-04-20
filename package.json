@@ -1,0 +1,17 @@
+{
+  "name": "node-imagecapture-server",
+  "version": "0.0.1",
+  "description": "Will take a screenshot of a webpage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node server.js"
+  },
+  "author": "Joel Douglass - Velir",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "http": "0.0.0",
+    "webshot": "^0.15.4"
+  }
+}

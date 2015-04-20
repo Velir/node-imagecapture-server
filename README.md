@@ -3,8 +3,8 @@ Fire up a server that will take a screenshot of your website. Uses [node-webshot
 
 ## Getting started
 
-  $ npm install
-  $ node server.js
+    $ npm install
+    $ node server.js
 
 
 ## Options

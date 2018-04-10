@@ -1,0 +1,14 @@
+{
+  "winstonDailyRotateLog": {
+    "datePattern": "YYYY-MM-DD",
+    "filename": "log-%DATE%.log",
+    "zippedArchive": false,
+    "maxSize": "50m",
+    "maxFiles": "30d",
+    "dirname": "log",
+    "level": "info"
+  },
+  "timeout": 30000,
+  "defaultWidth": 1024,
+  "defaultHeight": 1
+}

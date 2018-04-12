@@ -3,3 +3,5 @@ config/local.json
 /iisnode
 /log
 *.swp
+daemon/
+*.debug/

@@ -13,7 +13,8 @@
   "dependencies": {
     "config": "^1.30.0",
     "http": "0.0.0",
-    "puppeteer": "^1.2.0",
+    "node-windows": "^0.1.14",
+    "puppeteer": "^1.1.0",
     "uuid": "^3.2.1",
     "winston": "^2.4.1",
     "winston-daily-rotate-file": "^3.0.1"

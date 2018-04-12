@@ -51,7 +51,9 @@ http.createServer(function (req, res) {
     console.log('Server Error', req.url, e);
   }
 
-	puppeteer.launch()
+	puppeteer.launch({
+	  headless: false
+	})
 	  .then(browser => browser.newPage()
 	    .then(page => {
 
@@ -83,7 +85,10 @@ http.createServer(function (req, res) {
           else{
             log.debug('No waiting branch');
             return page.setViewport(viewPort)
-              .then(() => page.goto(targetUrl))
+              .then(() => {
+                log.debug(`Page goto: ${targetUrl}`);
+                return page.goto(targetUrl);
+              })
               .then(() => {
                 log.debug('Taking screenshot');
                 return page.screenshot({
@@ -101,8 +106,12 @@ http.createServer(function (req, res) {
 	        res.write(buffer);
 	        res.end();
           log.info('Success');
-	        browser.close();
+          browser.close();
+        })
+        .catch(e => {
+          browser.close();
+          handleError(e);
         }))
     .catch(handleError);
 
-}).listen(process.env.PORT || 9000);
+}).listen(process.env.PORT || 9876);

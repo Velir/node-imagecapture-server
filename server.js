@@ -34,6 +34,7 @@ http.createServer(function (req, res) {
 						height: windowHeight || 1
 					},
 					phantomPath: 'phantomjs.exe',
+					phantomConfig: {'ignore-ssl-errors': 'true' },
 					defaultWhiteBackground: true,
 					takeShotOnCallback: options.wait,
 					timeout: timeout
@@ -71,6 +72,7 @@ http.createServer(function (req, res) {
 				height: windowHeight || 1
 			},
 			phantomPath: 'phantomjs.exe',
+			phantomConfig: {'ignore-ssl-errors': 'true' },
 			defaultWhiteBackground: true,
 			takeShotOnCallback: options.wait,
 		};

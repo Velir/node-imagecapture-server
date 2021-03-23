@@ -1,4 +1,4 @@
-var webshot = require('webshot'),
+var webshot = require('node-webshot'),
 	http = require('http'),
 	fs = require('fs'),
 	url = require('url');

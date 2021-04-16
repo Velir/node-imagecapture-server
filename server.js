@@ -33,7 +33,7 @@ http.createServer(function (req, res) {
 						// Making the window height 1 will allow for shorter auto height images
 						height: windowHeight || 1
 					},
-					phantomPath: 'phantomjs.exe',
+					phantomPath: '.\\node_modules\\phantomjs-prebuilt\\lib\\phantom\\bin\\phantomjs.exe',
 					phantomConfig: {'ignore-ssl-errors': 'true' },
 					defaultWhiteBackground: true,
 					takeShotOnCallback: options.wait,
@@ -71,7 +71,7 @@ http.createServer(function (req, res) {
 				// Making the window height 1 will allow for shorter auto height images
 				height: windowHeight || 1
 			},
-			phantomPath: 'phantomjs.exe',
+			phantomPath: '.\\node_modules\\phantomjs-prebuilt\\lib\\phantom\\bin\\phantomjs.exe',
 			phantomConfig: {'ignore-ssl-errors': 'true' },
 			defaultWhiteBackground: true,
 			takeShotOnCallback: options.wait,

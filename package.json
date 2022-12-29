@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "config": "^1.30.0",
+    "config": "^3.3.8",
     "http": "0.0.0",
     "node-windows": "^0.1.14",
     "puppeteer": "^1.1.0",
